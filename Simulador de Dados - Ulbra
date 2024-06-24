@@ -1,0 +1,16 @@
+import java.util.Random;
+
+public class SimuladorDados {
+    public static void main(String[] args) {
+        Random random = new Random();
+        int soma = 0;
+        
+        for (int i = 0; i < 3; i++) {
+            int resultado = random.nextInt(6) + 1;
+            System.out.println("Resultado da jogada " + (i + 1) + ": " + resultado);
+            soma += resultado;
+        }
+        
+        System.out.println("Soma dos resultados: " + soma);
+    }
+}
